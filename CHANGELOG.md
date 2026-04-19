@@ -12,6 +12,40 @@ changes. For example, versions `0.2.x` are not compatible with `0.1.x`.
 
 ## [Unreleased]
 
+## [0.2.6] - 2025-12-14
+
+### Changed
+
+* Grab `zlib` sources from GH rather than from zlib.net. We check GH for
+  tags in order to discover versions, but not all tags have a tarball at
+  zlib.net. Since GH serves zip files, this implies the `unzip` tool is
+  now required to build.
+
+## [0.2.5] - 2025-11-22
+
+### Added
+
+* Also copy `sshd-auth` for OpenSSH 10+.
+
+### Fixed
+
+* Fix latest versions of OpenSSH (10+) and the toolchain (2025+) not
+  being listed when asking for latest versions.
+
+## [0.2.4] - 2025-05-01
+
+### Changed
+
+* Binaries are now built weekly.
+* Use Ubuntu 24.04 for CI actions.
+* Update package versions
+
+## [0.2.3] - 2024-09-28
+
+### Changed
+
+* Binaries are now hosted on GitHub as artifacts.
+
 ## [0.2.2] - 2024-09-15
 
 ### Fixed
